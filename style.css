@@ -8,86 +8,148 @@ body{
 
 #welcome {
     border: solid black;
-    margin: 10% 0 15% 0;
     display: flex;
     flex-direction: column;
     height: 100%;
     width: 100%;
-    column-gap: 0;
+    row-gap: 0;
+    padding-top: 10%;
+    padding-bottom: 10%;
 }
 
 #hello {
     font-weight: 400;
+    margin-bottom: 2%;
 }
 
-#welcome h1 {
-    border: solid green;
+.welcome h1 {
     font-weight: 900;
     color: purple;
+    margin-top: 0;
 }
 
 .description {
-    border: solid green;
     font-weight: 300;
     padding: 2%;
 }
 
 #date {
-    border: solid black;
     font-weight: 900;
+    margin-bottom: 0;
 }
 
 #event {
-    border: solid grey;
+    border: solid black;
     display: flex;
     flex-direction: column;
     height: 100%;
+    align-items: center;
+    padding-top: 5%;
 }
 
-#event h2 {
-    align-self: center;
-}
 
 #event ul {
-    width: 100%;
+    display: flex;
+    flex-direction: column;
+    width: 90%;
     padding: 0;
     list-style-type: none;    
+    gap: 0.5rem;
 }
 
 #event li {
     width: 100%;
-    border: solid blue;
     padding: 0;
     list-style-type: none;
     display: flex;
     justify-content: space-between;
+    align-content: center;
     align-items: center;
-    column-gap: 4%;
     font-size: 0.8rem;
-    
+    padding: 0.5rem;
+    background-color: rgba(128, 0, 128, 0.2); 
 }
 
 .event_logo {
-    border: dotted blue;
     width: 15%;
     height: 15%;
+    margin: 1rem;
 }
 
 .event_name {
     width: 4.5rem;
+    margin: 0 1rem 0 0.5rem;
+    color: purple;
+    font-weight: 700;
+    font-size: 1rem;
 }
 
 #event button {
     margin: 7% 0 7% 0;
-    width: 75%;
-    align-self: center;
+    width: 60vw;
     height: auto;
-    padding: 7%;
+    padding: 6%;
     color: white;
     background: purple;
     font-size: 1rem;
-    text-align: center;
+    font-weight: 700;
     letter-spacing: 0.03em;
     transition: all 0.5s;
     border: none;
+    align-items: center;
+}
+
+#about {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: solid grey;
+    padding-top: 10vh;
+}
+
+.hello_about {
+    margin-bottom: 1%;
+}
+
+.about h1 {
+    align-self: center;
+    margin: 0 auto;
+    color: purple;
+    font-weight: 900;
+    font-size: 2rem;
+}
+
+.about p {
+    align-items: center;
+}
+
+#partnerships {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#partnerships ul {
+    border: solid green;
+    display: flex;
+    width: 90%;
+    padding: 0;
+    list-style-type: none;    
+    gap: 0.5rem;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.partner li {
+    width: 100%;
+    padding: 0;
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    align-items: center;
+    font-size: 0.8rem;
+    padding: 0.5rem;
+    background-color: rgba(128, 0, 128, 0.2); 
 }

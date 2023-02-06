@@ -3,7 +3,6 @@ body{
     background-image: url('images/background1.jpg');
     background-repeat: no-repeat;
     background-size: cover;
-    padding: 5%;
 }
 
 #welcome {
@@ -12,8 +11,8 @@ body{
     height: 100%;
     width: 100%;
     row-gap: 0;
-    padding-top: 10%;
-    padding-bottom: 10%;
+    padding-top: 15%;
+    padding-bottom: 15%;
 }
 
 #hello {
@@ -162,15 +161,15 @@ body{
 
 @media only screen and (min-width: 768px) {
 body{
-  padding: 10%;
+  padding: 0;
   overflow-x: hidden;
 }
 
 #welcome {
-    height: 100vh;
+    height: 70vh;
     width: 100vw;
     margin: 0;
-    padding: 0;
+    padding: 10%;
 }
 
 #hello {
@@ -199,15 +198,16 @@ margin-bottom: 0;
 
 #event {
     margin: 0;
-    padding: 0;
+    padding: 10%;
     background-color: rgba(0, 0, 0, 0.9); 
+
 
 }
 
 #event h2 {
     color: white;
-    margin: 0;
-    padding: 3rem;
+    margin-bottom: auto;
+
 }
 
 #event ul {
@@ -257,7 +257,7 @@ font-size: 1.2rem;
     display: flex;
     display: flex;
     color: white;
-    margin: 0;
+    margin-top: auto;   
     padding: 3rem;
 
 }

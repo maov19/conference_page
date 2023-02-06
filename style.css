@@ -8,7 +8,7 @@ body{
 
 #welcome {
     border: solid black;
-    margin-top: 5%;
+    margin: 10% 0 15% 0;
     display: flex;
     flex-direction: column;
     height: 100%;
@@ -35,4 +35,59 @@ body{
 #date {
     border: solid black;
     font-weight: 900;
+}
+
+#event {
+    border: solid grey;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+#event h2 {
+    align-self: center;
+}
+
+#event ul {
+    width: 100%;
+    padding: 0;
+    list-style-type: none;    
+}
+
+#event li {
+    width: 100%;
+    border: solid blue;
+    padding: 0;
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    column-gap: 4%;
+    font-size: 0.8rem;
+    
+}
+
+.event_logo {
+    border: dotted blue;
+    width: 15%;
+    height: 15%;
+}
+
+.event_name {
+    width: 4.5rem;
+}
+
+#event button {
+    margin: 7% 0 7% 0;
+    width: 75%;
+    align-self: center;
+    height: auto;
+    padding: 7%;
+    color: white;
+    background: purple;
+    font-size: 1rem;
+    text-align: center;
+    letter-spacing: 0.03em;
+    transition: all 0.5s;
+    border: none;
 }

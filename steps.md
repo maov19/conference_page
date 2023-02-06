@@ -3,8 +3,8 @@ Day 1
         Set up the repository and tools.
 
     Milestone 1 - content (1h)
-        Choose the topic for your website.
-        Choose images, text, icons, fonts (we suggest using Lato as it is a free font similar to the one used in the original design).
+        Choose the topic for your website.- DONE
+        Choose images, text, icons, fonts (we suggest using Lato as it is a free font similar to the one used in the original design). - DONE
    
     Milestone 2 - mobile first (5h)
         Create the 2 pages for mobile.

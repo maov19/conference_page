@@ -1,0 +1,38 @@
+body{
+    font-family: 'Lato', sans-serif;
+    background-image: url('images/background1.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 5%;
+}
+
+#welcome {
+    border: solid black;
+    margin-top: 5%;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+    column-gap: 0;
+}
+
+#hello {
+    font-weight: 400;
+}
+
+#welcome h1 {
+    border: solid green;
+    font-weight: 900;
+    color: purple;
+}
+
+.description {
+    border: solid green;
+    font-weight: 300;
+    padding: 2%;
+}
+
+#date {
+    border: solid black;
+    font-weight: 900;
+}

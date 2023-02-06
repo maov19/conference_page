@@ -7,7 +7,6 @@ body{
 }
 
 #welcome {
-    border: solid black;
     display: flex;
     flex-direction: column;
     height: 100%;
@@ -24,8 +23,10 @@ body{
 
 .welcome h1 {
     font-weight: 900;
+    font-size: 1.8rem;
     color: purple;
     margin-top: 0;
+
 }
 
 .description {
@@ -152,4 +153,35 @@ body{
     font-size: 0.8rem;
     padding: 0.5rem;
     background-color: rgba(128, 0, 128, 0.2); 
+}
+
+@media only screen and (min-width: 768px) {
+body{
+  padding: 10%;
+}
+
+#hello {
+font-size: 3rem;
+margin-bottom: 0;
+}
+
+.welcome h1 {
+    font-size: 4rem;
+    margin-bottom: 0;
+}
+
+.description {
+    width: 60%;
+}
+
+#date {
+  font-size: 2.5rem;
+  margin-bottom: 0;
+}
+
+#location {
+    font-size: 1.5rem;
+    margin-top: 0.5rem;
+}
+
 }

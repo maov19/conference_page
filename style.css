@@ -247,6 +247,71 @@ body{
     display: none;
 }
 
+#artists {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#artists h2 {
+    align-items: center;
+    font-size: 1.2rem;
+    font-weight: 700;
+    margin: 0.5rem;
+}
+
+.artist {
+    display: flex;
+    flex-direction: row;
+    height: auto;
+}
+
+.artist_photo {
+    width: 20%;
+    height: 20%;
+    padding: 1rem;
+}
+
+.artist_info {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+    justify-content: center;
+}
+
+.artist_name {
+    margin: 0 0 0.2rem 0;
+    padding: 0;
+
+}
+
+.artist_story {
+    margin: 0;
+    padding: 0;
+    color: #ec5242;
+    font-style: italic;
+    font-size: 0.8rem;
+    font-weight: 700;
+}
+
+.line_left {
+    border-bottom: 1px solid rgba(216, 18, 18, 0.438);
+    margin: 0.6rem 0 0.6rem 0;    
+    padding: 0;
+    width: 5%;
+    display: flex;
+    text-align: left;
+
+}
+
+.artist_description {
+    margin: 0;
+    padding: 0;
+    font-size: 0.7rem;
+}
+
+
 #about {
     width: 100vw;
     background-image: url('images/mobile\ background.png');

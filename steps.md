@@ -15,12 +15,15 @@ Day 2
         Adapt the 2 pages to desktop. - DONE
     
     Milestone 4 - interactions (1.5h)
-        Implement the user interactions: link, mobile menu. - OG
-        Deploy the project.
+        Implement the user interactions: link. - DONE
+        https://www.youtube.com/watch?v=OFKBep95lb4&t=20s&ab_channel=TylerPotts
+        Deploy the project. - DONE
 Day 3
     Milestone 5 - dynamic page (5h)
         Implement the section "Featured speakers" with dynamic HTML.
         Deploy the project and check to make sure everything works as planned.
+        Implement the user interactions: fix hamburger menu
+
 
     Milestone 6 - documentation (1.5h)
         Record a video describing your project.

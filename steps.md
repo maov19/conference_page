@@ -7,8 +7,9 @@ Day 1
         Choose images, text, icons, fonts (we suggest using Lato as it is a free font similar to the one used in the original design). - DONE
    
     Milestone 2 - mobile first (5h)
-        Create the 2 pages for mobile.
-        Deploy the project.
+        Create the 2 pages for mobile. - DONE
+        Deploy the project. - DONE
+        https://maov19.github.io/conference_page/
 Day 2
     Milestone 3 - desktop version (5h)
         Adapt the 2 pages to desktop.

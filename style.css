@@ -133,6 +133,9 @@ body{
 }
 
 #about {
+    background-image: url('images/mobile\ background.png');
+    background-size: 100%;
+    background-repeat: no-repeat;
     display: flex;
     flex-direction: column;
     justify-content: center;

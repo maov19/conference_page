@@ -12,10 +12,10 @@ Day 1
         https://maov19.github.io/conference_page/
 Day 2
     Milestone 3 - desktop version (5h)
-        Adapt the 2 pages to desktop.
+        Adapt the 2 pages to desktop. - DONE
     
     Milestone 4 - interactions (1.5h)
-        Implement the user interactions: link, mobile menu.
+        Implement the user interactions: link, mobile menu. - OG
         Deploy the project.
 Day 3
     Milestone 5 - dynamic page (5h)

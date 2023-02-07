@@ -4,16 +4,15 @@ body{
 }
 
 #welcome {
-    height: 72vh;
+    height: 60vh;
     width: 96vw;
-    border: solid black;
     background-image: url('images/mobile\ background.png');
     background-size: 100%;
     background-repeat: no-repeat;
     display: flex;
     flex-direction: column;
     row-gap: 0;
-    padding: 15vh 2vh 15vh 2vh;
+    padding: 15vh 2vh 5vh 2vh;
     
 }
 
@@ -65,7 +64,6 @@ body{
     height: 100vh;
     width: 100vw;
     background-color: #272a31;
-    border: solid black;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -137,6 +135,7 @@ body{
 }
 
 #about {
+    width: 100vw;
     background-image: url('images/mobile\ background.png');
     background-size: 100%;
     background-repeat: no-repeat;
@@ -144,24 +143,106 @@ body{
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    text-align: center;
     border: solid grey;
     padding-top: 10vh;
 }
 
 .hello_about {
+    color: #ec5242;
+    font-weight: 400;
     margin-bottom: 1%;
 }
 
 .about h1 {
     align-self: center;
-    margin: 0 auto;
-    color: purple;
-    font-weight: 900;
+    margin: 0 0 2rem 0;
+    font-family: 'COCOGOOSE', sans-serif;
+    color: #ec5242;
+    font-weight: 400;
     font-size: 2rem;
+    line-height: 2.2rem;
 }
 
-.about p {
+#about_description {
+    width: 80vw;
+    display: flex;
+    justify-content: center;
     align-items: center;
+    align-self: center;
+    font-size: 0.7rem;
+    line-height: 1.4rem;
+    border: solid 1px rgba(22, 10, 10, 0.164);
+    padding: 1rem 1rem;
+    background-color: white;
+}
+
+#contact {
+    font-size: 0.7rem;
+    width: 70%;
+    margin-bottom: 2rem;
+}
+
+#logo {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+}
+
+#logo h2 {
+    font-size: 1.2rem;
+}
+
+#logo_copyright {
+    margin: 1rem 0 1rem 0;
+    font-size: 0.6rem;
+    width: 80%;
+    text-align: center;
+}
+
+.goat_logo {
+    width: 40%;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    align-self: center;
+    margin: 0;
+    padding: 0;
+}
+
+.line {
+    border-bottom: 1px solid rgb(189, 186, 186);
+    margin: 0;    
+    padding: 0;
+    width: 5%;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    align-self: center;
+}
+
+.long_line {
+    border-bottom: 0.1rem solid rgba(189, 186, 186, 0.5);
+    margin: 0; 
+    width: 90%;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    align-self: center;
+}
+
+#past_title {
+    font-size: 1.2rem;
+    margin-top: 3rem;
+}
+
+#past_text {
+    font-size: 0.8rem;
+    width: 80vw;
 }
 
 #partnerships {
@@ -193,6 +274,9 @@ body{
     padding: 0.5rem;
     background-color: rgba(128, 0, 128, 0.2); 
 }
+
+
+/* media queries  */
 
 @media only screen and (min-width: 768px) {
 body{

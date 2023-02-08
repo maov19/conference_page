@@ -20,9 +20,9 @@ Day 2
         Deploy the project. - DONE
 Day 3
     Milestone 5 - dynamic page (5h)
-        Implement the section "Featured speakers" with dynamic HTML.
+        Implement the section "Featured speakers" with dynamic HTML. - DONE
+        Implement the user interactions: fix hamburger menu - DONE
         Deploy the project and check to make sure everything works as planned.
-        Implement the user interactions: fix hamburger menu
 
 
     Milestone 6 - documentation (1.5h)

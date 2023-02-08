@@ -1,19 +1,22 @@
-// navbar popup
-const icon = document.getElementById('icon');
-const menu = document.getElementById('menuAll');
+// hamburger animation
+  // open menu when clicking hamburger
+  // closing menu when clicking x
+  // closing menu when clicking menu item
 
-// The event that opens the menu
-icon.onclick = function openMenu() {
-  icon.classList.toggle('is-active');
-  menu.classList.toggle('is-active');
-};
+const menuButton = document.querySelector('.hamburger');
+const mobileMenu = document.querySelector('.mobile-nav');
 
-document.onclick = function closeMenu(clickEvent) {
-  if (clickEvent.target.id !== 'menuAll' && clickEvent.target.id !== 'icon') {
-    icon.classList.remove('is-active');
-    menu.classList.remove('is-active');
-  }
-};
+menuButton.addEventListener('click', function () {
+  menuButton.classList.toggle('is-active')
+  mobileMenu.classList.toggle('is-active')
+});
+
+mobileMenu.addEventListener('click', function () {
+  menuButton.classList.remove('is-active')
+  mobileMenu.classList.remove('is-active')
+});
+
+
 
 // artists dynamic display
 
@@ -72,12 +75,6 @@ lineUp.setAttribute('id', 'featuredArtists')
 artist.appendChild(lineUp);
 
 for (let i = 0; i < artistInfo.length; i++) {
-  let columnMq = '';
-  if (i <= 2) {
-  columnMq = 'columnLeft'; 
-} else {
-  columnMq = 'columnRight'; 
-}
   lineUp.innerHTML += `
   <div class="artist">
   <img class="artist_photo" src= ${artistInfo[i].photo} alt="metallica logo">
@@ -89,8 +86,6 @@ for (let i = 0; i < artistInfo.length; i++) {
   </div>
   </div>
 `
-console.log(columnMq)
-
 }
 
 const artistTitle = document.createElement('h2');

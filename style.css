@@ -14,124 +14,101 @@ body{
     padding: 0vh 2vh 5vh 2vh;    
 }
 
-.navbar {
-    position: fixed;
-    padding-left: 1.5rem;
-    padding-top: 0.5rem;
-    top: 0;
-    left: 0;
-    right: 0;
-    width: 100vw;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    background-color: rgba(255, 255, 255, 0.342);
-  }
-
-  .goat_logo_top {
-    display: none;
-  }
-    
-  .icon {
-    margin: 0;
-    padding: 0;
-    position: relative;    
-    display: inline-block;
-    width: 50rem;
-    cursor: pointer;
-    appearance: none;
-    outline: none;
-    border: none;
-    background: none;
-    z-index: 100;
-  }
-  
-  .icon .bar,
-  .icon::after,
-  .icon::before {
-    content: '';
-    display: block;
-    width: 35px;
-    height: 5px;
-    background-color: #272a31;
-    margin: 6px 0;
-    transition: 0.4s;
-    z-index: 100;
-
-  }
-  
-  .icon.is-active::before {
-    transform: rotate(45deg) translate(0, 15px);
-    background-color: 272a31;
-    position: absolute;
-    z-index: 100;
-  }
-  
-  .icon.is-active::after {
-    transform: rotate(-45deg) translate(0, -15px);
-    background-color: 272a31;
-    position: absolute;
-    z-index: 100;
-
-  }
-  
-  .icon.is-active .bar {
-    opacity: 0;
-  }
-  
-  #menuAll {
+.mobile-nav {
     position: fixed;
     top: 0;
     left: 100%;
     width: 100%;
     min-height: 100vh;
     display: block;
-    z-index: 98;
-    padding-top: 40px;
+    z-index: 0;
+    background-color: #0f0e0dfa;
+    padding-top: 7vh;
     transition: 0.4s;
-    color: white;
-    font-family: 'Poppins', sans-serif;
-    font-style: normal;
-    font-weight: 600;
-    font-size: 32px;
-    line-height: 44px;
+    z-index: 2;
+
   }
-  
-  #menuAll.is-active {
+
+  .mobile-nav.is-active {
     left: 0;
-    color: white;
-    background: #ec5242;
-    backdrop-filter: blur(10px);
-    mix-blend-mode: multiply;
-    z-index: 90;
   }
-  
-  #menuAll ul li {
+
+  .mobile-nav li a {
+    display: block;
+    text-align: start;
+    margin-bottom: 16px;
+    padding: 16px;
+    text-decoration: none;
     color: white;
+  }
+
+  .mobile-nav li {
+    list-style-type: none;
+    font-size: 2rem;
+    font-weight: 400;
+  }
+
+
+.navbar {
+    display: block;
+    color: white;
+    width: 100vw;
+  }
+
+  .goat_logo_top {
+    display: none;
+  }
+
+  .hamburger {
+    margin-right: 50rem;
+    position: relative;
+    z-index: 3;
+    display: block;
+    width: 2.5rem;
+    cursor: pointer;
+    appearance: none;
+    background: none;
+    outline: none;
+    border: none;
+    
+  }
+
+  .hamburger .bar, .hamburger:after, .hamburger:before {
+    position: relative;
+
+    content: '';
     display: block;
     width: 100%;
-    max-width: 100vw;
-    text-align: start;
-    padding: 12px 16px;
-    z-index: 99;
+    height: 5px;
+    background-color: #272a31;
+    margin: 0.3rem;
+    transition: 0.4s;
+  }
 
+  .hamburger.is-active:before {
+    transform: rotate(45deg) translate(0px, 14px);
+    background-color: white;
 
   }
-  
-  #menuAll ul li a {
-    color: white;
 
+  .hamburger.is-active:after {
+    transform: rotate(-45deg) translate(0, -14px);
+    background-color: white;
+  }
+
+  .hamburger.hamburger.is-active .bar {
+    opacity: 0;
   }
   
   .menu {
     display: none;
-  } 
+  }
 
 #hello {
     color: #ec5242;
     font-weight: 400;
     font-size: 1.5rem;
-    margin-top: 13vh;
+    margin-top: 5vh;
     margin-bottom: 1vh;
 }
 
@@ -189,7 +166,7 @@ body{
 
 
 #event ul {
-    margin: 1rem 0 2rem 0;
+    margin: 0;
     padding: 0 4% 0 4%;
     display: flex;
     flex-direction: column;
@@ -200,7 +177,7 @@ body{
 #event li {
     margin: 0;
     padding: 0;
-    height: 5rem;
+    height: 6rem;
     list-style-type: none;
     display: flex;
     justify-content: space-between;
@@ -216,6 +193,7 @@ body{
     padding: 0 1rem 0 1rem;
     height: 50%;
     filter: invert(1);
+    z-index: 1;
 
 }
 
@@ -228,7 +206,7 @@ body{
 }
 
 #event button {
-    margin-bottom: 0;
+    margin: auto;
     width: 60vw;
     height: auto;
     padding: 6%;
@@ -240,7 +218,6 @@ body{
     transition: all 0.5s;
     border: none;
     align-items: center;
-    z-index: 100;
 }
 
 #lineup {
@@ -328,7 +305,7 @@ body{
 .hello_about {
     color: #ec5242;
     font-weight: 400;
-    margin-bottom: 1%;
+    margin-bottom: 1rem;
 }
 
 .about h1 {
@@ -347,7 +324,7 @@ body{
     justify-content: center;
     align-items: center;
     align-self: center;
-    font-size: 0.7rem;
+    font-size: 0.9rem;
     line-height: 1.4rem;
     border: solid 1px rgba(22, 10, 10, 0.164);
     padding: 1rem 1rem;
@@ -355,9 +332,9 @@ body{
 }
 
 #contact {
-    font-size: 0.7rem;
+    font-size: 0.9rem;
     width: 70%;
-    margin-bottom: 2rem;
+    margin-bottom: 3.5rem;
 }
 
 #logo {
@@ -474,6 +451,17 @@ body{
     margin: 0;
     padding: 0;
     background-color: white;
+    position: fixed;
+    padding-left: 1.5rem;
+    padding-top: 0.5rem;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100vw;
+    display: flex; */
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgba(255, 255, 255, 0.342); 
 }
 
 .goat_logo_top {
@@ -482,7 +470,7 @@ body{
     margin: 1rem 0 1rem 5.5em;
 }
 
-.icon {
+.hamburger {
     display: none;
 }
 
@@ -507,6 +495,8 @@ body{
 
 
 #hello {
+margin: 0;
+padding: 0;
 font-size: 2rem;
 margin-bottom: 0.5rem;
 }
@@ -687,7 +677,7 @@ span:after {
     justify-content: center;
     align-items: center;
     align-self: center;
-    z-index: 1;
+    /* z-index: 1; */
 }
 
 .line {
@@ -699,7 +689,7 @@ span:after {
     justify-content: center;
     align-items: center;
     align-self: center;
-    z-index: 1;
+    /* z-index: 1; */
 
 }
 
@@ -712,7 +702,7 @@ span:after {
     justify-content: center;
     align-items: center;
     align-self: center;
-    z-index: 0;
+    /* z-index: 0; */
 }
 
 .long_line {
@@ -724,7 +714,7 @@ span:after {
     justify-content: center;
     align-items: center;
     align-self: center;
-    z-index: 1;
+    /* z-index: 1; */
 }
 
 #past_title {

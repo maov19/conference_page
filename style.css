@@ -600,7 +600,31 @@ font-size: 1.2rem;
     display: flex;
     display: flex;
     color: white;
+}
 
+
+#featuredArtists {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  height: calc(20rem * 2 + 2rem);
+  align-content: center;
+}
+
+#feature_title {
+    display: none;
+}
+
+.artist {
+  width: 40%;
+  height: 10rem;
+  margin-bottom: 1rem;
+  margin-right: 1em;
+}
+
+.artist_photo {
+    width: 70%;
+    height: 70%;
 }
 
 #about {

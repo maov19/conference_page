@@ -66,24 +66,37 @@ const artistInfo = [
   }
 ]
 
-const artist = document.getElementById('artists')
+const artist = document.getElementById('artists');
+const lineUp = document.createElement('div');
+lineUp.setAttribute('id', 'featuredArtists')
+artist.appendChild(lineUp);
 
 for (let i = 0; i < artistInfo.length; i++) {
-  artist.innerHTML += `
-<div class="artist">
-<img class="artist_photo" src= ${artistInfo[i].photo} alt="metallica logo">
-<div class="artist_info">
-    <h3 class="artist_name">${artistInfo[i].name}</h3>
-    <p class="artist_story">${artistInfo[i].name}${artistInfo[i].story}</p>
-    <div class="line_left"></div>
-    <p class="artist_description">${artistInfo[i].name}${artistInfo[i].description}</p>
-</div>
-</div>
+  let columnMq = '';
+  if (i <= 2) {
+  columnMq = 'columnLeft'; 
+} else {
+  columnMq = 'columnRight'; 
+}
+  lineUp.innerHTML += `
+  <div class="artist">
+  <img class="artist_photo" src= ${artistInfo[i].photo} alt="metallica logo">
+  <div class="artist_info">
+      <h3 class="artist_name">${artistInfo[i].name}</h3>
+      <p class="artist_story">${artistInfo[i].name}${artistInfo[i].story}</p>
+      <div class="line_left"></div>
+      <p class="artist_description">${artistInfo[i].name}${artistInfo[i].description}</p>
+  </div>
+  </div>
 `
+console.log(columnMq)
+
 }
 
 const artistTitle = document.createElement('h2');
 artistTitle.innerHTML = 'Featured artists'
 artist.prepend(artistTitle)
+
+
 
 

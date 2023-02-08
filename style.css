@@ -475,10 +475,10 @@ body{
 }
 
 #welcome {
-    height: 100vh;
+    height: 80vh;
     width: 80vw;
     margin: 0;
-    padding: 10%;
+    padding: 10vh;
 }
 
 .navbar {
@@ -494,10 +494,9 @@ body{
     left: 0;
     right: 0;
     width: 100vw;
-    display: flex; */
+    display: flex; 
     align-items: center;
     justify-content: space-between;
-    background-color: rgba(255, 255, 255, 0.342); 
 }
 
 .goat_logo_top {
@@ -531,7 +530,7 @@ body{
 
 
 #hello {
-margin: 0;
+margin-top: 3rem;
 padding: 0;
 font-size: 2rem;
 margin-bottom: 0.5rem;
@@ -544,6 +543,7 @@ margin-bottom: 0.5rem;
 }
 
 .description {
+    margin: 1.2rem 0 2rem 0;
     width: 60%;
 }
 
@@ -552,9 +552,10 @@ margin-bottom: 0.5rem;
   margin-bottom: 0;
 }
 
-#location {
-    font-size: 1.5rem;
-    margin-top: 0.5rem;
+#place {
+    font-size: 1rem;
+    margin-top: 0.2rem;
+    font-weight: 700;
 }
 
 #event {
@@ -671,9 +672,9 @@ font-size: 1.2rem;
     justify-content: center;
     align-items: center;
     align-self: center;
-    font-size: 1.3rem;
+    font-size: 0.8rem;
     line-height: 1.5rem;
-    border: solid 1px rgba(22, 10, 10, 0.164);
+    border: solid 1px rgba(70, 55, 55, 0);
     padding: 2rem 4rem;
     background-color: white;
 }
@@ -684,7 +685,7 @@ font-size: 1.2rem;
     margin: 0;
     padding-top: 3rem;
     padding-bottom: 5rem;
-    font-size: 1.3rem;
+    font-size: 0.8rem;
 }
 
 span {
@@ -730,9 +731,9 @@ span:after {
 }
 
 .goat_logo {
-    margin: -3rem 0 -2rem 0;
+    margin: 0 0 1rem 0;
     padding: 0;
-    width: 50%;
+    width: 15%;
     display: flex;
     text-align: center;
     justify-content: center;
@@ -753,14 +754,31 @@ span:after {
     /* z-index: 1; */
 }
 
+#past_editions {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
 #past_title {
-    margin: 0;
+    margin: 0 0 1rem 0;
     padding: 0;
 }
 
 #past_text {
-    margin: 0;
+    margin: 0 0 2rem 0;
     padding: 0;
 }
+
+#past_photos {
+    display: flex;
+    flex-direction: row;
+    width: 80;
+}
+ #past_pictures {
+    padding: 1rem;
+    
+ }
 
 }

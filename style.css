@@ -157,25 +157,26 @@ body {
 }
 
 #event h2 {
-  margin: 2rem;
+  margin: 2rem 0 0 0;
   color: white;
   font-weight: 400;
 }
 
 #event ul {
-  margin: 0;
+  margin: 2rem 0 0 0;
   padding: 0;
   display: flex;
   flex-direction: column;
   list-style-type: none;
   gap: 0.5rem;
+  width: 90vw;
+
 }
 
 #event li {
   margin: 0;
   padding: 0;
   height: 12vh;
-  width: 80vw;
   list-style-type: none;
   display: flex;
   justify-content: space-between;
@@ -184,6 +185,12 @@ body {
   color: white;
   font-size: 0.8rem;
   background-color: rgba(116, 108, 116, 0.31);
+}
+
+#event li p {
+  padding: 0;
+  margin: 0;
+  margin-right: 1rem;
 }
 
 .event_logo {
@@ -207,7 +214,7 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding: 5%;
+  padding: 2rem;
   margin: auto;
   width: 60vw;
   height: 5vh;
@@ -480,7 +487,6 @@ footer p {
     background-image: url(images/home-bg-desk.png);
     height: 100vh;
     width: 100vw;
-
   }
 
   .navbar {
@@ -488,7 +494,7 @@ footer p {
     margin: 0;
     padding: 0;
     width: 100%;
-    height: fit-content;
+    height: auto;
     position: fixed;
     top: 0;
     left: 0;
@@ -506,17 +512,12 @@ footer p {
     gap: 1rem;
     height: 1.2rem;
     align-items: center;
-
-
   }
 
   #black_nav a {
     color: white;
     text-decoration: none;
     font-size: 0.6rem;
-    
-
-
   }
 
   .goat_logo_top {
@@ -533,13 +534,10 @@ footer p {
   .menu {
     margin: 0 5rem 0 0;
     padding: 0;
-    /* width: 70%; */
     display: flex;
     justify-content: space-around;
     list-style-type: none;
     text-align: center;
-
-    display: flex;
     flex-direction: row;
     height: 3rem;
     align-items: center;
@@ -556,7 +554,6 @@ footer p {
     padding: 0;
     text-decoration: none;
     font-size: 0.7rem;
-    /* padding: 1rem; */
   }
 
   #hello {
@@ -607,7 +604,7 @@ footer p {
   }
 
   #event h2 {
-    margin: 0;
+    margin: 1rem 0 0 0;
     padding: 0;
     color: white;
   }
@@ -643,6 +640,7 @@ footer p {
     justify-content: center;
     align-content: center;
     align-items: center;
+    text-align: center;
     font-size: 0.8rem;
     background-color: rgba(255, 255, 255, 0.1);
   }
@@ -660,7 +658,7 @@ footer p {
     display: none;
   }
 
-  #lineup a {
+  #lineup {
     margin: 0;
     padding: 0;
     display: flex;
@@ -862,6 +860,7 @@ footer p {
 
   #past_pictures {
     align-items: center;
+
     /* padding: 1rem; */
     width: 35%;
   }

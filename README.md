@@ -35,7 +35,7 @@
 # 📖 [The Greatest Concert of All Times] <a name="about-project"></a>
 
 **[GOAT]** is my first capstone project on the Microverse program. 
-Check my [Project presentation]()
+Check my [Project presentation](https://www.loom.com/share/12991244cfce4e72a0da5aa5389e67c0)
 
 ## 🛠 Built With <a name="built-with"></a>
 
@@ -63,7 +63,7 @@ Check my [Project presentation]()
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-- [Live Demo]()
+- [Live Demo](https://maov19.github.io/conference_page/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -138,7 +138,7 @@ If you like this project give a ⭐️.
 
 ## 🙏 Acknowledgments <a name="acknowledgements"></a>
 
-I would like to thank [Cindy Shin in Behance](https://www.behance.net/gallery/29845175/CC-Global-Summit-2015)  for the design and Microverse and my coding partners for the support.
+Credits for [Cindy Shin in Behance](https://www.behance.net/gallery/29845175/CC-Global-Summit-2015) for the design and Microverse and my coding partners for the support.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 

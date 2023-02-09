@@ -1,19 +1,17 @@
 body {
   font-family: 'Lato', sans-serif;
-  overflow-x: hidden;
+  margin: 0;
 }
 
 #welcome {
-  margin: auto;
-  height: 100vh;
-  width: 92vw;
+  height: 70vh;
+  width: 100vw;
   background-image: url('images/mobile\ background.png');
-  background-size: cover;
+  background-size: 100%;
   background-repeat: no-repeat;
   display: flex;
   flex-direction: column;
   row-gap: 0;
-  padding: 0 2vh 5vh 2vh;
 }
 
 #black_nav {
@@ -63,7 +61,7 @@ body {
 }
 
 .hamburger {
-  margin-right: 50rem;
+  margin: 1rem 0 0 1rem;
   position: relative;
   z-index: 3;
   display: block;
@@ -110,8 +108,7 @@ body {
   color: #ec5242;
   font-weight: 400;
   font-size: 1.5rem;
-  margin-top: 5vh;
-  margin-bottom: 1vh;
+  margin: 8vh 0 1vh 5vw;
 }
 
 .welcome h1 {
@@ -120,13 +117,12 @@ body {
   font-weight: 400;
   font-size: 1.9rem;
   line-height: 1.9rem;
-  margin-bottom: 0;
-  margin-top: 0;
+  margin: 0 0 0 5vw;
 }
 
 .description {
-  margin: 8% 0 8% 0;
-  width: 90%;
+  margin: 8% 0 8% 4%;
+  width: 80%;
   background-color: white;
   font-weight: 300;
   font-size: 0.8rem;
@@ -134,23 +130,24 @@ body {
 }
 
 #date {
-  margin: 0;
+  margin: 0 0 0 5vw;
   padding: 0;
   color: #272a31;
   font-family: 'COCOGOOSE', sans-serif;
   font-weight: 900;
   font-size: 1.5rem;
-  margin-bottom: 0;
 }
 
 #place {
-  margin: 0;
+  margin: 0 0 0 5vw;
   padding: 0;
   font-weight: 300;
   font-size: 1rem;
 }
 
 #event {
+  margin: 0;
+  padding: 0;
   height: 100vh;
   width: 100vw;
   background-color: #272a31;
@@ -476,14 +473,14 @@ footer p {
 
   #welcome {
     margin: 0;
+    padding: 0;
     display: flex;
     flex-direction: column;
     justify-content: center;
     background-image: url(images/home-bg-desk.png);
-    background-size: 100%;
-    height: 80vh;
-    width: 90vw;
-    padding: 10vh;
+    height: 100vh;
+    width: 100vw;
+
   }
 
   .navbar {
@@ -563,13 +560,13 @@ footer p {
   }
 
   #hello {
-    margin-top: 3rem;
+    margin: 3rem 0 0.5rem 12rem;
     padding: 0;
     font-size: 2rem;
-    margin-bottom: 0.5rem;
   }
 
   .welcome h1 {
+    margin-left: 12rem;
     display: flex;
     flex-wrap: wrap;
     font-size: 3rem;
@@ -579,7 +576,7 @@ footer p {
   }
 
   .description {
-    margin: 0;
+    margin: 0 0 0 12rem;
     padding: 2rem;
     padding-bottom: 3rem;
     width: 40%;
@@ -587,12 +584,12 @@ footer p {
 
   #date {
     font-size: 2rem;
-    margin-bottom: 0;
+    margin: 0 0 0 12rem;
   }
 
   #place {
     font-size: 1rem;
-    margin-top: 0.2rem;
+    margin: 0.2rem 0 0 12rem;
     font-weight: 700;
   }
 
@@ -738,20 +735,21 @@ footer p {
   }
 
   .about h1 {
-    font-size: 3rem;
-    margin-bottom: 2rem;
-    line-height: 3rem;
-    width: 70%;
+    font-size: 2rem;
+    margin: 1.5rem 0 0.3rem 0;
+    line-height: 2rem;
+    width: 50%;
   }
 
   #about_description {
-    width: 80%;
+    color: #272a31;
+    width: 60%;
     display: flex;
     justify-content: center;
     align-items: center;
     align-self: center;
-    font-size: 0.8rem;
-    line-height: 1.5rem;
+    font-size: 0.6rem;
+    line-height: 0.9rem;
     border: solid 1px rgba(70, 55, 55, 0);
     padding: 2rem 4rem;
     background-color: white;
@@ -759,11 +757,10 @@ footer p {
 
   #contact {
     display: inline-block;
-    width: 65%;
+    width: 50%;
     margin: 0;
-    padding-top: 3rem;
     padding-bottom: 5rem;
-    font-size: 0.8rem;
+    font-size: 0.7rem;
   }
 
   span {
@@ -777,16 +774,21 @@ footer p {
   }
 
   #logo {
-    padding: 3rem;
-    margin-bottom: 0;
+    padding: 0;
+    margin: 0;
     display: flex;
     flex-direction: column;
     text-align: center;
   }
 
+  #logo h2 {
+    margin: 0;
+    padding: 0;
+  }
+
   #logo_copyright {
-    margin: 0 0 2rem 0;
-    width: 70%;
+    margin: 0.2rem 0 2rem 0;
+    width: 50%;
     display: flex;
     text-align: center;
     justify-content: center;
@@ -851,12 +853,17 @@ footer p {
   }
 
   #past_photos {
+    margin-bottom: 3rem;
     display: flex;
     flex-direction: row;
+    justify-content: center;
+    gap: 1rem;
   }
 
   #past_pictures {
-    padding: 1rem;
+    align-items: center;
+    /* padding: 1rem; */
+    width: 35%;
   }
 
   footer {

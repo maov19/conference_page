@@ -1,0 +1,7 @@
+.partner li {
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  list-style-type: none;
+  justify-content: space-around;
+}

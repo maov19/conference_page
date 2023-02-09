@@ -16,6 +16,10 @@ body {
   padding: 0 2vh 5vh 2vh;
 }
 
+#black_nav {
+  display: none;
+}
+
 .mobile-nav {
   position: fixed;
   top: 0;
@@ -476,32 +480,53 @@ footer p {
     flex-direction: column;
     justify-content: center;
     background-image: url(images/home-bg-desk.png);
-    background-size: cover;
+    background-size: 100%;
     height: 80vh;
     width: 90vw;
     padding: 10vh;
   }
 
   .navbar {
-    width: 100%;
-    height: 3rem;
-    margin: 0;
     background-color: white;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: fit-content;
     position: fixed;
-    padding-left: 1.5rem;
-    padding-top: 0.5rem;
     top: 0;
     left: 0;
     right: 0;
     display: flex;
+    flex-direction: column;
+  }
+
+  #black_nav {
+    background-color: #272a31;
+    padding: 0 5rem 0 0;
+    margin: 0;
+    display: flex;
+    justify-content: end;
+    gap: 1rem;
+    height: 1.2rem;
     align-items: center;
-    justify-content: space-between;
+
+
+  }
+
+  #black_nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 0.6rem;
+    
+
+
   }
 
   .goat_logo_top {
+    padding: 0;
     display: flex;
     width: 10%;
-    margin: 1rem 0 1rem 5.5em;
+    margin: 2.5rem 0 1rem 5.5em;
   }
 
   .hamburger {
@@ -509,13 +534,18 @@ footer p {
   }
 
   .menu {
-    margin-right: 10vw;
+    margin: 0 5rem 0 0;
     padding: 0;
-    width: 70%;
+    /* width: 70%; */
     display: flex;
     justify-content: space-around;
     list-style-type: none;
     text-align: center;
+
+    display: flex;
+    flex-direction: row;
+    height: 3rem;
+    align-items: center;
   }
 
   a {
@@ -523,11 +553,13 @@ footer p {
   }
 
   .menu li a {
+    width: 5rem;
     color: black;
     margin: 0;
+    padding: 0;
     text-decoration: none;
     font-size: 0.7rem;
-    padding: 1rem;
+    /* padding: 1rem; */
   }
 
   #hello {
@@ -700,8 +732,8 @@ footer p {
   }
 
   #about {
-    width: 88vw;
-    padding: 15vh 11vh 5vh 11vh;
+    width: 100vw;
+    padding-top: 15vh;
     text-align: center;
   }
 
@@ -709,6 +741,7 @@ footer p {
     font-size: 3rem;
     margin-bottom: 2rem;
     line-height: 3rem;
+    width: 70%;
   }
 
   #about_description {
@@ -828,7 +861,7 @@ footer p {
 
   footer {
     display: flex;
-    justify-content: center;
+    justify-content: start;
     align-items: center;
     background-color: #272a31;
   }
@@ -846,6 +879,7 @@ footer p {
   #footer_desktop {
     display: flex;
     background-color: white;
+    justify-content: start;
   }
 
   #footer_desktop p {

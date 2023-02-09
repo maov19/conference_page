@@ -26,5 +26,5 @@ Day 3
 
 
     Milestone 6 - documentation (1.5h)
-        Record a video describing your project.
         Create a good README and pull request description.
+        Record a video describing your project.

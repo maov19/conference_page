@@ -237,6 +237,10 @@ body {
   align-items: center;
 }
 
+.artistTitle {
+  margin: 2rem 0 0 0 ;
+}
+
 #feature_title {
   align-items: center;
   font-size: 1.2rem;
@@ -666,6 +670,7 @@ footer p {
   }
 
   #featuredArtists {
+    margin: 3rem 0 0 0;
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
@@ -678,15 +683,15 @@ footer p {
   }
 
   .artist {
-    width: 40%;
-    height: 10rem;
+    width: 40vw;
+    height: 12rem;
     margin-bottom: 1rem;
     margin-right: 1em;
   }
 
   .artist_photo {
-    width: 70%;
-    height: 70%;
+    width: 30%;
+    height: 100%;
   }
 
   #partners {
@@ -885,7 +890,7 @@ footer p {
   #footer_desktop {
     display: flex;
     background-color: white;
-    justify-content: start;
+    justify-content: space-around;
   }
 
   #footer_desktop p {

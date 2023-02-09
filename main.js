@@ -88,4 +88,8 @@ for (let i = 0; i < artistInfo.length; i += 1) {
 
 const artistTitle = document.createElement('h2');
 artistTitle.innerHTML = 'Featured artists';
+artistTitle.classList.add('artistTitle')
 artist.prepend(artistTitle);
+artistTitle.appendChild(divider);
+
+

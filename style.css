@@ -1,10 +1,11 @@
 body{
     font-family: 'Lato', sans-serif;
+    overflow-x: hidden;
 }
 
 #welcome {
     height: 60vh;
-    width: 96vw;
+    width: 92vw;
     background-image: url('images/mobile\ background.png');
     background-size: 100%;
     background-repeat: no-repeat;
@@ -292,14 +293,12 @@ body{
 #about {
     width: 100vw;
     background-image: url('images/mobile\ background.png');
-    background-size: 100%;
     background-repeat: no-repeat;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     text-align: center;
-    padding-top: 10vh;
 }
 
 .hello_about {
@@ -324,7 +323,7 @@ body{
     justify-content: center;
     align-items: center;
     align-self: center;
-    font-size: 0.9rem;
+    font-size: 0.7rem;
     line-height: 1.4rem;
     border: solid 1px rgba(22, 10, 10, 0.164);
     padding: 1rem 1rem;
@@ -332,7 +331,7 @@ body{
 }
 
 #contact {
-    font-size: 0.9rem;
+    font-size: 0.7rem;
     width: 70%;
     margin-bottom: 3.5rem;
 }
@@ -356,14 +355,14 @@ body{
 }
 
 .goat_logo {
-    width: 40%;
+    width: 25%;
     display: flex;
     text-align: center;
     justify-content: center;
     align-items: center;
     align-self: center;
     margin: 0;
-    padding: 0;
+    padding: 1rem;
 }
 
 .line {
@@ -412,6 +411,9 @@ body{
 
 
 #partners {
+    margin: 0;
+    padding: 0;
+    width: 100vw;
     padding-top: 2rem;
     padding-bottom: 2rem;
     margin-top: 2rem;
@@ -459,12 +461,19 @@ footer {
 }
 
 footer img {
-    width: 20%;
+    width: 15%;
+    height: 15%;
 }
 
 footer p {
     font-size: 0.8rem;
 }
+
+#partners_desktop, #footer_desktop {
+    display: none;
+}
+
+
 
 /* media queries  */
 
@@ -475,15 +484,19 @@ body{
 }
 
 #welcome {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-image: url(images/home-bg-desk.png);
     height: 80vh;
-    width: 80vw;
+    width: vw;
     margin: 0;
     padding: 10vh;
 }
 
 .navbar {
     width: 100vw;
-    height: auto;
+    height: 3rem;
     margin: 0;
     padding: 0;
     background-color: white;
@@ -540,11 +553,14 @@ margin-bottom: 0.5rem;
     font-size: 3rem;
     line-height: 3rem;
     margin-bottom: 0;
+    width: 70%;
 }
 
 .description {
-    margin: 1.2rem 0 2rem 0;
-    width: 60%;
+    margin: 0;
+    padding: 2rem;
+    padding-bottom: 3rem;
+    width: 40%;
 }
 
 #date {
@@ -559,6 +575,8 @@ margin-bottom: 0.5rem;
 }
 
 #event {
+    height: auto;
+    width: 100vw;
     margin: 0;
     padding: 0;
     width: 100vw;
@@ -566,6 +584,9 @@ margin-bottom: 0.5rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
+    padding-top: 5%;
+    padding-bottom: 5%;
+
 
 }
 
@@ -586,8 +607,9 @@ gap: 0.2rem;
 }
 
 .event_logo {
-    margin-bottom: 1rem;
-    padding: 0;
+margin: 0;
+    padding-top: 2%;
+    padding-bottom: 15%;
     filter: invert(1);
     width: 40%;
     height: 20%;
@@ -653,6 +675,45 @@ font-size: 1.2rem;
     width: 70%;
     height: 70%;
 }
+
+#partners {
+    display: none;
+}
+
+#partners_desktop {
+    width: 100%;
+    height: fit-content;
+    margin: 0;
+    padding: 0;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(65,66,70,255);  
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+    text-align: center; 
+}
+
+#partners_desktop h2 {
+    margin: 0;
+    padding: 0;
+    color: grey;
+    font-weight: 400;
+}
+
+#partnerships {
+    width: 80%;
+    height: fit-content;
+    justify-content: space-around;
+    align-items: center;
+    padding-top: 3%;
+    padding-left: 10%;
+    padding-right: 10%;
+
+}
+
 
 #about {
     width: 80vw;
@@ -777,8 +838,33 @@ span:after {
     width: 80;
 }
  #past_pictures {
-    padding: 1rem;
-    
+    padding: 1rem;   
  }
+
+ footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #272a31;
+}
+
+footer img {
+    width: 5%;
+    padding: 2rem;
+}
+
+footer p {
+    font-size: 0.8rem;
+    color: white;
+}
+
+#footer_desktop {
+    display: flex;
+    background-color: white;
+}
+
+#footer_desktop p{
+    color: #272a31;
+}
 
 }

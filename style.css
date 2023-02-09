@@ -14,6 +14,10 @@ body {
   row-gap: 0;
 }
 
+a {
+  text-decoration: none;
+}
+
 #black_nav {
   display: none;
 }
@@ -170,7 +174,6 @@ body {
   list-style-type: none;
   gap: 0.5rem;
   width: 90vw;
-
 }
 
 #event li {
@@ -185,6 +188,11 @@ body {
   color: white;
   font-size: 0.8rem;
   background-color: rgba(116, 108, 116, 0.31);
+}
+
+footer p {
+  text-decoration: none;
+  font-size: 0.8rem;
 }
 
 #event li p {
@@ -238,7 +246,7 @@ body {
 }
 
 .artistTitle {
-  margin: 2rem 0 0 0 ;
+  margin: 2rem 0 0 0;
 }
 
 #feature_title {
@@ -465,10 +473,6 @@ footer img {
   height: 15%;
 }
 
-footer p {
-  font-size: 0.8rem;
-}
-
 #partners_desktop,
 #footer_desktop {
   display: none;
@@ -518,6 +522,36 @@ footer p {
     align-items: center;
   }
 
+  #nav_logos {
+    margin: 0 0 0 0;
+    padding: 0;
+    width: 3rem;
+    display: flex;
+    justify-content: end;
+    gap: 0;
+  }
+
+  #twitter {
+    margin: 0;
+    padding: 0;
+    width: 50%;
+  }
+
+  #fb {
+    margin: 0;
+    padding: 0;
+    width: 40%;
+  }
+
+  .menu li a {
+    text-decoration: none;
+    width: 5rem;
+    color: black;
+    margin: 0;
+    padding: 0;
+    font-size: 0.7rem;
+  }
+
   #black_nav a {
     color: white;
     text-decoration: none;
@@ -528,7 +562,7 @@ footer p {
     padding: 0;
     display: flex;
     width: 10%;
-    margin: 2.5rem 0 1rem 5.5em;
+    margin: 2.5rem 0 1rem 8rem;
   }
 
   .hamburger {
@@ -547,27 +581,14 @@ footer p {
     align-items: center;
   }
 
-  a {
-    display: inline-block;
-  }
-
-  .menu li a {
-    width: 5rem;
-    color: black;
-    margin: 0;
-    padding: 0;
-    text-decoration: none;
-    font-size: 0.7rem;
-  }
-
   #hello {
-    margin: 3rem 0 0.5rem 12rem;
+    margin: 3rem 0 0.5rem 10rem;
     padding: 0;
     font-size: 2rem;
   }
 
   .welcome h1 {
-    margin-left: 12rem;
+    margin-left: 10rem;
     display: flex;
     flex-wrap: wrap;
     font-size: 3rem;
@@ -577,7 +598,7 @@ footer p {
   }
 
   .description {
-    margin: 0 0 0 12rem;
+    margin: 0 0 0 10rem;
     padding: 2rem;
     padding-bottom: 3rem;
     width: 40%;
@@ -585,12 +606,12 @@ footer p {
 
   #date {
     font-size: 2rem;
-    margin: 0 0 0 12rem;
+    margin: 0 0 0 10rem;
   }
 
   #place {
     font-size: 1rem;
-    margin: 0.2rem 0 0 12rem;
+    margin: 0.2rem 0 0 10rem;
     font-weight: 700;
   }
 
